@@ -8,6 +8,7 @@
 
 body{
   background-color: var(--muted);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
 }
 
 .skills-container1 {
@@ -16,80 +17,91 @@ body{
   margin-top: 8%;
 }
 
-.skills-container1 table {
-  width: 75%; 
+.skills-table {
+  width: 60%;
   border-spacing: 0;
-  box-shadow: 0 0.8% 2% rgba(0,0,0,8);
+  margin-inline: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  border-radius: 16px;
+  overflow: hidden; 
 }
 
-.skills-container1 th,
-.skills-container1 td {
-  width: 33.333%;
+.skills-table th, .skills-table td { 
+  width: 33.333%; 
+  vertical-align: top; 
 }
 
-.skills-container1 th {
-  background: linear-gradient(to bottom, var(--accent), var(--accent-dark)); /*chatgpt => color transition to bottom from x color to y color*/
-  font-weight: bold;
-  padding: 2% 1%;
+.skills-table th {
+  background: linear-gradient(to bottom, var(--accent), var(--accent-dark));
+  padding: 2%;
   font-size: 22px;
   text-align: center;
   color: var(--muted);
+  font-weight: bolder;
 }
 
-#row1 th:first-child {
-  border-top-left-radius: 16px;
+.skills-table td {
+  padding: 2%;
+  background: #f3f3f3;
+  border-top: 1px solid lightgrey;
 }
 
-#row1 th:last-child {
-  border-top-right-radius: 16px;
-}
-
-#row2 td:first-child {
-  border-bottom-left-radius: 16px;
-}
-
-#row2 td:last-child {
-  border-bottom-right-radius: 16px;
-}
-
-.skills-container1 td {
-  padding: 2% 2%;
-  background-color: rgb(243, 243, 243);
-  border-top: 0.2% solid lightgrey;
-}
-
-.skills-container1 td ul {
+.skills-table .icons, .skills-table .pills {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;              
-  flex-direction: row;       
-  justify-content: center;    
-  align-items: center;   
-  gap: 10%;    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 3%;                   
 }
 
-.skills-container1 td ul li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.skills-container1 td ul li img{
+.skills-table .icons li img {
   width: 100%;
-  height: 100%;
+  height: 44px;
+  object-fit: contain;
+  display: block;
 }
 
-.skills-container1 td ul li:not(:has(img)) {
+.non-icons{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  font-weight: bold;
+}
+
+.skills-table .pill {
   display: inline-flex;
   align-items: center;
-  padding: .44rem .72rem;
+  padding: 2.6%;
   border-radius: 999px;
   background: #fff;
   border: 1px solid #e5e7eb;
   box-shadow: 0 2px 4px rgba(0,0,0,.04);
-  font-size: .95rem;
+  font-size: 15px;
   line-height: 1.1;
-  white-space: wrap;                 /* keep on one line */
-  overflow-wrap: normal;
+  white-space: nowrap;    
+  font-weight: bold;
+  color: var(--text);        
 }
+
+.my   { color: #00758F; }     
+.sql  { color: #F29111; }     
+.sqlite { color: #0A7B83; }  
+.mongo  { color: #35742b; }  
+.db { color: rgb(117, 36, 36); }  
+.git { color: #F05033; }
+.github { color: #181717; }
+.wireshark {color: #1679A7; }
+.linux { color: #855b2c; }
+
+#row1 th:first-child { border-top-left-radius: 16px; }
+#row1 th:last-child  { border-top-right-radius: 16px; }
+#row4 td:first-child { border-bottom-left-radius: 16px; }
+#row4 td:last-child  { border-bottom-right-radius: 16px; }
