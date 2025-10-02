@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" /> <!-- supports al the characters -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- for the layout -->
-    <title>Home — Vasile Andrei Popan</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-
-  <body>
-    <header class="header">
-      <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vasile Andrei Popan</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+</head>
+<body>
+    <header>
         <nav>
-          <ul class="nav">
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="index.html" class="actual">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>     
+            </ul>
+                  
         </nav>
-      </div>
     </header>
-
     <main>
-      <section class="index-hero container"> <!-- 2 classes: hero & container-->
-        <figure class="index-figure">
-            <img src="images/ImagenCara.jpg" class="index-photo"/>
-        </figure>
+        <div class="index-container1">
+            <div class="index-container2"> 
+                <img src="images/ImagenCara.jpg" class="image-index" alt="imagenPersona">   
+                <div class="index-container3">
+                    <h1>Vasile Andrei Popan</h1>
+                    <p>
+                        Third-year Computer Engineering student at the University of Deusto.<br> 
+                        My passions include Data Science, Artificial Intelligence, Cryptography, and Cybersecurity. <br>
+                        I am currently exploring how data science and cryptography can work together.
+                    </p>
+                    <div class="index-container4">
+                        <a href="docs/cv_vasileandreipopan.pdf">View CV</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <div class="index-home-content">
-          <h1>Vasile Andrei Popan</h1>
-          <p>Computer Engineering student tackling challenges in AI and cybersecurity, 
-            currently exploring how data science and cryptography can work together.</p>
-          <div>
-            <a class="index-btn" href="docs/cv_vasileandreipopan.pdf" download="Vasile_Andrei_Popan_CV.pdf">Download CV</a>
-            <a class="index-btn2" href="https://github.com/vasileandreipopan">GitHub</a>
-            <a class="index-btn2" href="https://www.linkedin.com/in/vasile-andrei-popan">LinkedIn</a>
-          </div>
+    <footer class="site-footer">
+        <div class="footer-container1">
+            <div class="footer-container2">
+                <p>Computer Engineering @University of Deusto</p>
+            </div>
+
+            <div class="footer-contact">
+                <a href="mailto:vasileandreipopan@gmail.com" aria-label="Email">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/vasile-andrei-popan" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.9h.1c.5-.9 1.8-2.1 3.9-2.1 4.2 0 5 2.7 5 6.1V21h-4v-4.9c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21H9z"/></svg>
+                </a>
+                <a href="https://github.com/vasileandreipopan" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.5 1.1 3.1.8.1-.7.3-1.1.6-1.4-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C16.8 6 17.8 6.3 17.8 6.3c.6 1.7.2 2.9.1 3.2.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.3.7.9.7 1.8v2.6c0 .3.2.6.8.5A12 12 0 0 0 12 .5z"/></svg>
+                </a>
+            </div>
         </div>
 
-        <a href="skills.html" class="scroll-right">▶</a>
-      </section>
-    </main>
-  </body>
+        <div class="footer-note">
+            <small>Open to internships in AI & Cybersecurity — Bilbao / Remote</small>
+            <small>© 2025 Vasile Andrei Popan</small>
+        </div>
+    </footer> 
+</body>
 </html>

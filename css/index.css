@@ -1,0 +1,88 @@
+:root {      
+  --header: #212A31;    
+  --text: #2E3944;      
+  --accent: #124E66;   
+  --accent-dark: #748D92;
+  --muted: #D3D9D4;
+}
+
+body{
+    background-color: var(--muted);
+}
+
+
+.index-container1{
+    margin-top: 7%;
+}
+
+.index-container2{
+    border-radius: 16px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    gap: 5%;
+    box-shadow: -1% -1% 2% rgba(255,255,255,0.7), 1%  1% 3% rgba(0,0,0,0.08);
+}
+
+.index-container3{
+    width: 50%;
+    padding-left: 5%;
+
+}
+
+.index-container3 h1{
+    color: var(--accent);
+}
+
+.index-container3 p{
+    font-size: 120%;
+    color: var(--text);
+}
+
+.image-index{
+    width: 32%;
+    border-radius: 100%;
+    border: 2px solid var(--accent);
+    padding: 0;
+    aspect-ratio: 1/1;
+}
+.index-container4{
+    margin-top: 7%;
+}
+
+.index-container4 a{
+    background: linear-gradient(to bottom, var(--accent), var(--accent-dark)); /*chatgpt => color transition to bottom from x color to y color*/
+    color: white;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 18px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.index-container4 a:hover{
+    background: linear-gradient(to bottom, var(--accent-dark), var(--muted)); /*chatgpt => color transition to bottom from x color to y color*/
+}
+
+
+
+/*
+    minimo 3 páginas y máximo de 4 usando hipervínculos
+    una cabecera y un footer comun, tiene quee star incluido en un css único (por ejemplo, headerfooter.css)
+    usar al menos una vez todos los elementos html presentados en clase 7 elemntos.
+    tienen que pasar la validación de HTML
+
+
+    archivo comprimido IW-NIE-E1
+    
+*/
