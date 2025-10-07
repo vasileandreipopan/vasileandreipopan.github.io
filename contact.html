@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Vasile Andrei Popan</title>
-    <link rel="stylesheet" href="css/headerFooter.css" />
-    <!-- header/footer/nav styles :contentReference[oaicite:1]{index=1} -->
-    <link rel="stylesheet" href="css/contact.css" />
-    <!-- new form styles -->
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
     <header>
@@ -23,74 +21,74 @@
     </header>
 
     <main>
-      <section class="contact-container1">
-        <div class="contact-card">
-            <form class="contact-form" action="#" method="post">
-                
-                <div class="group1">
-                    <div class="fg">
-                        <label>Full name</label>
-                        <input id="name" name="name" type="text" placeholder="Your name" />
+        <div class="contact-container1">
+            <div class="contact-card">
+                <form class="contact-form" action="#" method="post">
+                    
+                    <div class="group1">
+                        <div class="fg">
+                            <label>Full name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name">
+                        </div>
+
+                        <div class="fg">
+                            <label>Preferred contact date</label>
+                            <input id="date" name="date" type="date">
+                        </div>
+
+                        <div class="fg">
+                            <label>Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com">
+                        </div>
+
+                        <div class="fg">
+                            <label>Phone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="+34 600 000 000" inputmode="tel">
+                        </div>
                     </div>
 
-                    <div class="fg">
-                        <label>Preferred contact date</label>
-                        <input id="date" name="date" type="date" />
+                    <fieldset class="form-fieldset">
+                        <legend>Preferred contact method</legend>
+                        <label class="radio">
+                            <input type="radio" name="contact_method" value="email">
+                            <span>Email</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="contact_method" value="phone">
+                            <span>Phone</span>
+                        </label>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label>Reason for contacting</label>
+                        <select id="reason" name="reason">
+                            <option value="" disabled selected>Select one</option>
+                            <option>Internship opportunity</option>
+                            <option>Project collaboration</option>
+                            <option>Freelance work</option>
+                            <option>Speaking / mentoring</option>
+                            <option>Other</option>
+                        </select>
                     </div>
 
-                    <div class="fg">
-                        <label>Email</label>
-                        <input id="email" name="email" type="email" placeholder="you@example.com" />
+                    <div class="form-group form-group--full">
+                        <label>Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="How can I help?"></textarea>
                     </div>
 
-                    <div class="fg">
-                        <label>Phone</label>
-                        <input id="phone" name="phone" type="tel" placeholder="+34 600 000 000" inputmode="tel" />
+                    <div class="form-group form-group--full">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Subscribe to occasional updates</span>
+                        </label>
                     </div>
-                </div>
 
-                <fieldset class="form-fieldset">
-                    <legend>Preferred contact method</legend>
-                    <label class="radio">
-                        <input type="radio", name="contact_method", value="email"/>
-                        <span>Email</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="contact_method" value="phone" />
-                        <span>Phone</span>
-                    </label>
-                </fieldset>
-
-                <div class="form-group">
-                    <label>Reason for contacting</label>
-                    <select id="reason" name="reason">
-                        <option value="" disabled selected>Select one</option>
-                        <option>Internship opportunity</option>
-                        <option>Project collaboration</option>
-                        <option>Freelance work</option>
-                        <option>Speaking / mentoring</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group form-group--full">
-                    <label>Message</label>
-                    <textarea id="message" name="message" rows="6" placeholder="How can I help?"></textarea>
-                </div>
-
-                <div class="form-group form-group--full">
-                    <label class="checkbox">
-                        <input type="checkbox"/>
-                        <span>Subscribe to occasional updates</span>
-                    </label>
-                </div>
-
-                <div class="form-actions">
-                    <a class="btn">Send message</a>
-                </div>
-            </form>
+                    <div class="form-actions">
+                        <a class="btn">Send message</a>
+                    </div>
+                </form>
+            </div>
         </div>
-      </section>
     </main>
 
     <footer class="site-footer">
