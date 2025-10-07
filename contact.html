@@ -1,100 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Vasile Andrei Popan</title>
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/headerFooter.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Vasile Andrei Popan</title>
+    <link rel="stylesheet" href="css/headerFooter.css" />
+    <!-- header/footer/nav styles :contentReference[oaicite:1]{index=1} -->
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- new form styles -->
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="contact.html" class="actual">Contact</a></li>     
-            </ul>
-                  
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="contact.html" class="actual">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-        <div class="skills-container1">
-            <table class="skills-table">
-                <thead>
-                    <tr id="row1">
-                        <th>Programming</th>
-                        <th>Databases</th>
-                        <th>Focus Areas</th>
-                    </tr>
-                </thead>
+      <section class="contact-container1">
+        <div class="contact-card">
+            <form class="contact-form" action="#" method="post">
+                
+                <div class="group1">
+                    <div class="fg">
+                        <label>Full name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" />
+                    </div>
 
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul class="icons">
-                                <li><img src="images/python_logo.png" alt="Python"></li>
-                                <li><img src="images/java_logo.png"   alt="Java" id="java"></li>
-                                <li><img src="images/c_logo.png"      alt="C"></li>
-                                <li><img src="images/cmasmas_logo.png" alt="C++"></li>
-                                <li><img src="images/html_logo.png"   alt="HTML"></li>
-                                <li><img src="images/css_logo.png"    alt="CSS"></li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="non-icons">
-                                <li class="pill"><span class="my">My</span><span class="sql">SQL</span></li>
-                                <li class="pill"><span class="sqlite">SQLite</span></li>
-                                <li class="pill"><span class="mongo">Mongo</span><span class="db">DB</span></li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="non-icons">
-                                <li class="pill"><span class="git">Git</span></li>
-                                <li class="pill"><span class="github">GitHub</span></li>
-                                <li class="pill"><span class="wireshark">Wireshark</span></li>
-                                <li class="pill"><span class="linux">Linux</span></li>
-                            </ul>
-                        </td>
-                    </tr>
+                    <div class="fg">
+                        <label>Preferred contact date</label>
+                        <input id="date" name="date" type="date" />
+                    </div>
 
-                    <tr id="row3">
-                        <th>Tools</th>
-                        <th>Language</th>
-                        <th>Professional Skills</th>
-                    </tr>
+                    <div class="fg">
+                        <label>Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" />
+                    </div>
 
-                    <tr id="row4">
-                        <td>
-                            <ul class="pills">
-                                <li class="pill">Data Science</li>
-                                <li class="pill">AI</li>
-                                <li class="pill">Cryptography</li>
-                                <li class="pill">Cybersecurity</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="pills">
-                                <li class="pill">English (fluent)</li>
-                                <li class="pill">Romanian (fluent)</li>
-                                <li class="pill">Spanish (fluent)</li>
-                                <li class="pill">Basque (fluent)</li>
-                                <li class="pill">Russian (beginner)</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="pills">
-                                <li class="pill">Project management</li>
-                                <li class="pill">Teamwork</li>
-                                <li class="pill">Problem solving</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                    <div class="fg">
+                        <label>Phone</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+34 600 000 000" inputmode="tel" />
+                    </div>
+                </div>
+
+                <fieldset class="form-fieldset">
+                    <legend>Preferred contact method</legend>
+                    <label class="radio">
+                        <input type="radio", name="contact_method", value="email"/>
+                        <span>Email</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="contact_method" value="phone" />
+                        <span>Phone</span>
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label>Reason for contacting</label>
+                    <select id="reason" name="reason">
+                        <option value="" disabled selected>Select one</option>
+                        <option>Internship opportunity</option>
+                        <option>Project collaboration</option>
+                        <option>Freelance work</option>
+                        <option>Speaking / mentoring</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-group--full">
+                    <label>Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="How can I help?"></textarea>
+                </div>
+
+                <div class="form-group form-group--full">
+                    <label class="checkbox">
+                        <input type="checkbox"/>
+                        <span>Subscribe to occasional updates</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <a class="btn">Send message</a>
+                </div>
+            </form>
         </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -121,7 +117,5 @@
             <small>© 2025 Vasile Andrei Popan</small>
         </div>
     </footer> 
-</body>
+  </body>
 </html>
-
-<!--svg hecho con chatGPT-->
